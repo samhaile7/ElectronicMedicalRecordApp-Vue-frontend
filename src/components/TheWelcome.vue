@@ -1,14 +1,33 @@
 <script setup>
-import WelcomeItem from './WelcomeItem.vue'
-import DocumentationIcon from './icons/IconDocumentation.vue'
-import ToolingIcon from './icons/IconTooling.vue'
-import EcosystemIcon from './icons/IconEcosystem.vue'
-import CommunityIcon from './icons/IconCommunity.vue'
-import SupportIcon from './icons/IconSupport.vue'
+// import WelcomeItem from './WelcomeItem.vue'
+// import DocumentationIcon from './icons/IconDocumentation.vue'
+// import ToolingIcon from './icons/IconTooling.vue'
+// import EcosystemIcon from './icons/IconEcosystem.vue'
+// import CommunityIcon from './icons/IconCommunity.vue'
+// import SupportIcon from './icons/IconSupport.vue'
 </script>
 
 <template>
-  <WelcomeItem>
+    <h1>Components to include </h1>
+  <ul>
+    <li>login/logout</li>
+    <li>Homepage</li>
+    <li>Summary box</li>
+    <li>Header (title + logo)</li>
+    <li>Footer (Contact us, social media...)</li>
+    <li>Calendar view</li>
+    <li>Master patient list</li>
+    <li>Patient row</li>
+    <li>Provider dashboard header</li>
+    <li>Patient note </li>
+    <li>Patient info</li>    
+    <li>New note entry (update/values/save)</li>
+
+    
+    </ul>
+
+  
+  <!-- <WelcomeItem>
     <template #icon>
       <DocumentationIcon />
     </template>
@@ -82,5 +101,5 @@ import SupportIcon from './icons/IconSupport.vue'
     As an independent project, Vue relies on community backing for its sustainability. You can help
     us by
     <a href="https://vuejs.org/sponsor/" target="_blank" rel="noopener">becoming a sponsor</a>.
-  </WelcomeItem>
+  </WelcomeItem> -->
 </template>
