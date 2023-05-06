@@ -1,5 +1,7 @@
 # Electronic Health Record App - Vue
 
+In progress
+
 ## Project Setup
 
 ```sh
