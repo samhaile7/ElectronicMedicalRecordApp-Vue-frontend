@@ -1,7 +1,9 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+// import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
 import MasterPatientList from './components/MasterPatientList.vue';
+
+
 </script>
 <!-- defines the template for your page-->
 <template>
