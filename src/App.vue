@@ -1,8 +1,9 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+import MasterPatientList from './components/MasterPatientList.vue';
 </script>
-
+<!-- defines the template for your page-->
 <template>
   <header>
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
@@ -16,6 +17,7 @@ import HelloWorld from './components/HelloWorld.vue'
       </nav>
     </div>
   </header>
+  <master-patient-list />
 
   <RouterView />
 </template>
