@@ -1,6 +1,9 @@
 <template>
   <div class="masterlist">
+
+    <button v-on:click="listAllPatients()">Get master list</button>
     <h1>{{ placeholder }}</h1>
+
     <p> <!--
         //Display Welcome! here is a list of patients: and their details
         //Display Master array list
@@ -25,11 +28,23 @@
 </template>
 
 <script>
+import PatientService from '../services/PatientService';
+
 export default {
   data() {
     return {
-      placeholder: 'master list goes here'
+      placeholder: 'No patients here'
 
+    }
+  },
+
+  methods: {
+    listAllPatients() {
+      PatientService.listAllPatients().then((response) => {
+        if (response.status === 200) {
+          this.placeholder = response.data;
+        }
+      }).catch((err) => console.log(err));
     }
   }
 }
