@@ -14,14 +14,18 @@ import MasterPatientList from './components/MasterPatientList.vue';
       <HelloWorld msg="Electronic Health Record App" />
 
       <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
+        <RouterLink v-bind:to="{name: 'home'}">Home</RouterLink> 
+        <RouterLink v-bind:to="{name: 'register'}">Register</RouterLink> 
+        <RouterLink v-bind:to="{name: 'login'}">Login</RouterLink> 
+        <RouterLink v-bind:to="{name: 'feed'}">Feed</RouterLink> 
+        </nav>
+        <router-view/>
+      
     </div>
   </header>
   <master-patient-list />
 
-  <RouterView />
+  
 
 </template>
 
