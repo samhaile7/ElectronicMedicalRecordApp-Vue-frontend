@@ -23,7 +23,7 @@ const router = createRouter({
       name: 'feed',
       component: () => import('../views/Feed.vue')
     },
-    { path: '*', component: () => import('../views/Feed.vue') }
+    // { path: '*', component: () => import('../views/Feed.vue') }
   ]
 })
 

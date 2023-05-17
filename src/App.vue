@@ -48,7 +48,9 @@ nav {
 }
 
 nav a.router-link-exact-active {
-  color: var(--color-text);
+  color: red;
+  padding: 4px;
+  border-radius: 4px;
 }
 
 nav a.router-link-exact-active:hover {
