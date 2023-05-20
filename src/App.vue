@@ -1,10 +1,31 @@
-<script setup>
 
-import MasterPatientList from './components/MasterPatientList.vue';
+<script>
+import MasterPatientList from "./components/MasterPatientList.vue";
+import { getAuth, signOut } from "firebase/auth";
 
 
+export default {
+  components: {
+    MasterPatientList // Step 2
+    },
+    methods: {
+        logout() {         
+
+const auth = getAuth();
+signOut(auth).then(() => {
+  // Sign-out successful.
+  alert('Successfully logged out');
+                    this.$router.push('/');
+}).catch((error) => {
+  // An error happened.
+  alert(error.message);
+                    this.$router.push('/');
+});
+        },
+    },
+};
 </script>
-<!-- defines the template for your page-->
+
 <template>
  
   <header>
@@ -26,7 +47,7 @@ import MasterPatientList from './components/MasterPatientList.vue';
       
     </div>
   </header>
-  <master-patient-list />
+ <master-patient-list />
 
   
 
