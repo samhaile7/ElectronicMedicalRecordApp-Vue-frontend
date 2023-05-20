@@ -11,9 +11,6 @@
 <script>
 import PatientService from '../services/PatientService';
 
-
-
-
 export default {
   data() {
     return {

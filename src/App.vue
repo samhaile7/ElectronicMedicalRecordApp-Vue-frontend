@@ -16,9 +16,12 @@ import MasterPatientList from './components/MasterPatientList.vue';
       <nav>
         <RouterLink v-bind:to="{name: 'home'}">Home</RouterLink> 
         <RouterLink v-bind:to="{name: 'register'}">Register</RouterLink> 
-        <RouterLink v-bind:to="{name: 'login'}">Login</RouterLink> 
-        <RouterLink v-bind:to="{name: 'feed'}">Feed</RouterLink> 
-        </nav>
+        <!-- <RouterLink v-bind:to="{name: 'login'}">Login</RouterLink>  -->
+        <!-- <RouterLink v-bind:to="{name: 'feed'}">Feed</RouterLink>  -->
+        
+  <router-link to="/dashboard">Dashboard</router-link> |
+  <button @click="logout">Logout</button>
+      </nav>
         <router-view/>
       
     </div>

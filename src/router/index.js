@@ -1,4 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import { getAuth } from "firebase/auth";
+
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -19,12 +21,39 @@ const router = createRouter({
       component: () => import('../views/Login.vue')
     },
     {
+      path: '/dashboard',
+      name: 'Dashboard',
+      component: () =>
+          import('../views/Dashboard.vue'),
+          meta: {
+            authRequired: true,
+          },
+          
+  },
+    {
       path: '/feed',
       name: 'feed',
       component: () => import('../views/Feed.vue')
     },
+    
     // { path: '*', component: () => import('../views/Feed.vue') }
-  ]
-})
+  ],
+});
+router.beforeEach((to, from, next) => {
+  const auth = getAuth();
+  if (to.matched.some(record => record.meta.authRequired)) {
+    
+    if (auth.currentUser) {
+      next();
+    } else {
+      alert('You must be logged in to see this page');
+      next({
+        path: '/',
+      });
+    }
+  } else {
+    next();
+  }
+});
 
 export default router
