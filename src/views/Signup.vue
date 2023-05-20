@@ -1,17 +1,18 @@
 <template>
-  <button class="button__login" @click="handleLogin">Log In</button>
+  <button class="button__sign-up" @click="handleSignUp">Sign Up</button>
 </template>
 
 <script>
 export default {
   methods: {
-    handleLogin() {
+    handleSignUp() {
       this.$auth0.loginWithRedirect({
         appState: {
           target: "/profile",
         },
         authorizationParams: {
           prompt: "login",
+          screen_hint: "signup",
         }
       });
     },

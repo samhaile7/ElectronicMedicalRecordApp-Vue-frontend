@@ -1,12 +1,22 @@
 
 <script>
 import MasterPatientList from "./components/MasterPatientList.vue";
+// import NavBarButtons from "./views/NavBarButtons.vue";
+
 
 
 export default {
+  data() {
+    return {
+      isAuthenticated: this.$auth0.isAuthenticated,
+    };
+  },
   components: {
     MasterPatientList // Step 2
-    },
+    ,
+    
+    
+},
     methods: {
         logout() {         
 
@@ -28,22 +38,24 @@ export default {
 
       <nav>
         
-        <RouterLink v-bind:to="{name: 'home'}">Home</RouterLink> 
-        <RouterLink v-bind:to="{name: 'register'}">Register</RouterLink> 
+        
+        <RouterLink v-bind:to="{name: 'register'}">Registration/Login</RouterLink> 
         <!-- <RouterLink v-bind:to="{name: 'login'}">Login</RouterLink>  -->
         <!-- <RouterLink v-bind:to="{name: 'feed'}">Feed</RouterLink>  -->
         
   <router-link to="/dashboard">Dashboard</router-link> |
-  <router-link to="/dashboard">Try Demo!</router-link> |
+  <router-link v-if="isAuthenticated" to="/userprofile">User Profile</router-link> |
   
       </nav>
       
         <router-view/>
-        <button @click="logout">Logout</button>
+    
       
     </div>
   </header>
  <master-patient-list />
+
+ 
 
   
 
