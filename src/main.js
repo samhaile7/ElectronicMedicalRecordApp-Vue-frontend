@@ -3,7 +3,7 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 import axios from 'axios'
-
+import PrimeVue from 'primevue/config';
 import './assets/main.css'
 
 // Import the functions you need from the SDKs you need
@@ -31,6 +31,9 @@ const app = createApp(App)
 
 
 app.use(router)
+
+
+app.use(PrimeVue);
 
 app.mount('#app')
 
