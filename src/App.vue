@@ -35,15 +35,19 @@ signOut(auth).then(() => {
       <HelloWorld msg="Electronic Health Record App" />
 
       <nav>
+        
         <RouterLink v-bind:to="{name: 'home'}">Home</RouterLink> 
         <RouterLink v-bind:to="{name: 'register'}">Register</RouterLink> 
         <!-- <RouterLink v-bind:to="{name: 'login'}">Login</RouterLink>  -->
         <!-- <RouterLink v-bind:to="{name: 'feed'}">Feed</RouterLink>  -->
         
   <router-link to="/dashboard">Dashboard</router-link> |
-  <button @click="logout">Logout</button>
+  <router-link to="/dashboard">Try Demo!</router-link> |
+  
       </nav>
+      
         <router-view/>
+        <button @click="logout">Logout</button>
       
     </div>
   </header>
