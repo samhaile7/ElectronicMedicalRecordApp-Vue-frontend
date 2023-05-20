@@ -1,7 +1,6 @@
 
 <script>
 import MasterPatientList from "./components/MasterPatientList.vue";
-import { getAuth, signOut } from "firebase/auth";
 
 
 export default {
@@ -11,19 +10,12 @@ export default {
     methods: {
         logout() {         
 
-const auth = getAuth();
-signOut(auth).then(() => {
-  // Sign-out successful.
-  alert('Successfully logged out');
-                    this.$router.push('/');
-}).catch((error) => {
-  // An error happened.
-  alert(error.message);
-                    this.$router.push('/');
-});
-        },
-    },
-};
+     
+    
+        this.$auth0.logout({ logoutParams: { returnTo: window.location.origin } });
+      },
+   }
+  }
 </script>
 
 <template>

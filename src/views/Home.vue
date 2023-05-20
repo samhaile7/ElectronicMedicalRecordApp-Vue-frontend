@@ -20,7 +20,6 @@
 </template>
 
 <script>
-import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 
 export default {
 
@@ -31,20 +30,9 @@ export default {
   }; 
 },
 methods: {
-   login() {
-   const auth = getAuth();
-signInWithEmailAndPassword(auth, this.email, this.password)
-  .then(() => {
-    // Signed in userCredential
-    alert('Successfully logged in');
-        this.$router.push('/dashboard');
-    // ...
-  })
-  .catch((error) => {
-   alert(error.message);
-  });
+   
 
-}}}
+}}
 
 </script>
 

@@ -18,7 +18,6 @@
 </template>
 
 <script>
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 export default {
   data() { 
   return { 
@@ -27,20 +26,7 @@ export default {
   }; 
 },
 methods: {
-  register() {
-    const auth = getAuth();
-createUserWithEmailAndPassword(auth, this.email, this.password)
-   .then(() => {
-    // Signed in userCredential
-    // const user = userCredential.user;
-    alert('Successfully registered! Please login.');
-        this.$router.push('/');
-    // ...
-  })
-  .catch((error) => {
-    alert(error.message);
-  });
-}}}
+}}
 </script>
 
 <style>
