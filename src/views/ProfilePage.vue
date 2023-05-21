@@ -5,6 +5,8 @@
     <button v-if="!isAuthenticated" @click="login">Log in here</button>
     <pre>
       <code>{{ user }}</code>
+    
+
     </pre>
 
 </template>
