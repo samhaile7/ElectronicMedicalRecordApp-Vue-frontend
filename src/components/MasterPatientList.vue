@@ -1,9 +1,9 @@
 <template>
   <div class="masterlist">
-    <button v-on:click="listAllPatients()">Get master list</button>
+    <button class="btn btn-primary" v-on:click="listAllPatients()">Get master list</button>
     
 
-    <el-table v-if="showTable" :data="allPatients" height="250">
+    <el-table  v-if="showTable" :data="allPatients" height="250">
       <el-table-column prop="patientId" label="patientId" />
       <el-table-column prop="firstName" label="First" />
       <el-table-column prop="lastName" label="Last" />
