@@ -54,8 +54,7 @@ export default {
   background-color: lightyellow;
   border: 1px solid darkgoldenrod;
   border-radius: 8px;
-  padding: 10px;
-  margin: 10px;
+ 
   grid-area: main;
 
 }
