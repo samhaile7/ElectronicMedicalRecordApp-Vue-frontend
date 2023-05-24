@@ -1,12 +1,39 @@
 #app {
-
   color: darkkhaki;
   background-color: rgb(198, 248, 218);
   border: 1px solid darkgoldenrod;
   border-radius: 8px;
   padding: 10px;
   margin: 10px;
+  display: grid;
 
-  min-height: 100vh;
-  
+  min-height: calc(100vh - 20px);
+
+  grid-template-columns: 200px 1fr 200px;
+  grid-template-areas:
+    'header header header'
+    'menu-nav main calendar'
+    'footer footer footer';
+}
+
+@media (max-width: 1024px) {
+  #app {
+    grid-template-areas:
+      'header header'
+      'menu-nav menu-nav'
+      'main calendar'
+      'footer footer';
+    grid-template-columns: 4fr 1fr;
   }
+}
+@media (max-width: 768px) {
+  #app {
+    grid-template-areas:
+      'header'
+      'menu-nav'
+      'main'
+      'calendar'
+      'footer';
+    grid-template-columns: 1fr;
+  }
+}

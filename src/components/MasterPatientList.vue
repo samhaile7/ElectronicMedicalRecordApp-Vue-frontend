@@ -56,5 +56,7 @@ export default {
   border-radius: 8px;
   padding: 10px;
   margin: 10px;
+  grid-area: main;
+
 }
 </style>
