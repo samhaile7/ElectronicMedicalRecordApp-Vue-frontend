@@ -1,5 +1,9 @@
 <template>
-    <div class ="bottom"></div>
+    <div class ="bottom">
+      dfgfgd
+      dfgdfgdf
+      df
+    </div>
   </template>
   
   <script>

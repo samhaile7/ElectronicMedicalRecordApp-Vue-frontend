@@ -9,14 +9,20 @@ import { createAuth0 } from '@auth0/auth0-vue'
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
 
-// Import the functions you need from the SDKs you need
-
-// Initialize Firebase
-
-// eslint-disable-next-line no-undef
 axios.defaults.baseURL = 'http://localhost:8080'
 
 const app = createApp(App)
+// Vuetify
+import 'vuetify/styles'
+import { createVuetify } from 'vuetify'
+import * as components from 'vuetify/components'
+import * as directives from 'vuetify/directives'
+
+const vuetify = createVuetify({
+  components,
+  directives,
+})
+app.use(vuetify)
 
 app.use(
   createAuth0({

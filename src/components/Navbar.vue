@@ -1,5 +1,7 @@
 <template>
-  <aside class ="navbar"></aside>
+  <aside class ="leftsection">
+
+  </aside>
 </template>
 
 <script>
@@ -9,7 +11,7 @@ export default {
 </script>
 
 <style>
-.navbar {
+.leftsection {
   color: darkkhaki;
   background-color: rgb(162, 92, 194);
   border: 1px solid darkgoldenrod;
