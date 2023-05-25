@@ -12,6 +12,8 @@
   grid-row-gap: 9px;
 
   grid-template-columns: 200px 1fr 200px;
+  grid-template-rows: auto 1fr auto;
+  /* grid-auto-rows: auto auto; */
   grid-template-areas:
     'header header header'
     'menu-nav main calendar'
