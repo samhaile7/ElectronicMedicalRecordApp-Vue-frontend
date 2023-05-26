@@ -1,5 +1,6 @@
 <template>
-<div class = "top">
+ <div class = "top">
+ 
 <nav class=" navbar navbar-expand-md navbar-light bg-light d-flex justify-content-around" style="background-color: #e3f2fd;">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -19,7 +20,7 @@
       </li>
     </ul>
   
-  </div>
+  </div> -->
 </nav>
 </div>
 </template>
