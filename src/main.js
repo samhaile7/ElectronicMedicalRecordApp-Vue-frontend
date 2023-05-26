@@ -8,6 +8,7 @@ import './assets/main.css'
 import { createAuth0 } from '@auth0/auth0-vue'
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
+import './index.css'
 
 axios.defaults.baseURL = 'http://localhost:8080'
 
