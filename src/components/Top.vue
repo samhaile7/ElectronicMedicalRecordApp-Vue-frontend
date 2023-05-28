@@ -20,8 +20,10 @@
       </li>
     </ul>
   
-  </div> -->
+  </div> 
+  
 </nav>
+
 </div>
 </template>
 
