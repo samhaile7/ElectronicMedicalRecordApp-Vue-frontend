@@ -33,12 +33,12 @@ export default {
   position: fixed;
   display: flex;
   justify-content: space-evenly;
-  padding-top: 1.375rem;
-  padding-bottom: 1.375rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   padding-left: 0.5rem ;
-  font-size: 2em;
+  font-size: 1.5rem;
   align-items: center;
-  max-height: 10vh;
+  max-height: 15vh;
  
 
 }
