@@ -1,13 +1,14 @@
 <template>
   <div>
-  <h2>Dashboard</h2>
-  <p>This page is only visible to users that are currently logged in</p>
+  <MasterPatientList />
 </div>
 </template>
 
 <script>
-export default {
+import MasterPatientList from '../components/MasterPatientList.vue';
 
+export default {
+    components: { MasterPatientList }
 }
 </script>
 

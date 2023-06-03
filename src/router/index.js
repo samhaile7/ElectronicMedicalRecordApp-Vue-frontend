@@ -26,35 +26,14 @@ const router = createRouter({
       name: 'Dashboard',
       component: () =>
           import('../views/Dashboard.vue'),
-          meta: {
-            authRequired: false,
-          },
+        
           
   },
-    {
-      path: '/feed',
-      name: 'feed',
-      component: () => import('../views/Feed.vue')
-    },
+
     
     // { path: '*', component: () => import('../views/Feed.vue') }
   ],
 });
-// router.beforeEach((to, from, next) => {
-//   const auth = getAuth();
-//   if (to.matched.some(record => record.meta.authRequired)) {
-    
-//     if (auth.currentUser) {
-//       next();
-//     } else {
-//       alert('You must be logged in to see this page');
-//       next({
-//         path: '/',
-//       });
-//     }
-//   } else {
-//     next();
-//   }
-// });
+
 
 export default router
