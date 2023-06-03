@@ -1,30 +1,20 @@
 <template>
   <Top />
-  <Navbar />
-<RightSection/>
-  <MasterPatientList />
-  <Bottom />
+ <router-view />
 </template>
 
 <script>
 import Top from './components/Top.vue'
-import MasterPatientList from './components/MasterPatientList.vue'
-import Navbar from './components/Navbar.vue'
-import RightSection from './components/RightSection.vue'
-import Bottom from './components/Bottom.vue'
+
 
 export default {
   data() {
     return {
-      isAuthenticated: this.$auth0.isAuthenticated
     }
   },
   components: {
-    MasterPatientList,
-    Navbar,
-    RightSection,
-    Top,
-    Bottom
+    Top
+    
 },
   
     Asideethods: {
