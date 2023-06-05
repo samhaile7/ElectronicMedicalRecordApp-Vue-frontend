@@ -1,9 +1,8 @@
 #app {
   font-family: Soehne, system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
-  color: darkkhaki;
-  background-color: rgb(198, 248, 218);
-  border: 1px solid darkgoldenrod;
-  border-radius: 8px;
+  
+  margin: 0;
+  padding:0;
 
   display: grid;
 

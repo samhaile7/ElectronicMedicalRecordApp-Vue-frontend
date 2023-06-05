@@ -1,6 +1,6 @@
 <template>
   <Top />
- <router-view />
+ <router-view class = "routerview" />
 </template>
 
 <script>
@@ -24,4 +24,9 @@ export default {
   }
 }
 </script>
-<style scoped></style>
+<style scoped>
+.routerview{
+  margin-top: 100px;
+}
+
+</style>

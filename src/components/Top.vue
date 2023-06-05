@@ -24,9 +24,8 @@ export default {
 
 <style>
 .top {
-  color: rgb(255, 255, 255);
-  background-color: rgb(18, 9, 59);
-  border: 1px solid darkgoldenrod;
+  background-color: rgba(213, 238, 246, 0.5);
+  border: 3px solid rgb(254, 0, 0);
   border-radius: 8px;
   top: 0; 
   width: 100%;
