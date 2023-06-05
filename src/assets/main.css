@@ -3,43 +3,44 @@
   
   margin: 0;
   padding:0;
+  box-sizing: border-box;
 
-  display: grid;
+  /* display: grid; */
 
   min-width: 100vw;
   min-height: 100vh;
   grid-column-gap: 9px;
   grid-row-gap: 9px;
 
-  grid-template-columns: 200px 1fr 200px;
-  grid-template-rows: auto 1fr auto;
+  /* grid-template-columns: 200px 1fr 200px;
+  grid-template-rows: auto 1fr auto; */
   /* grid-auto-rows: auto auto; */
-  grid-template-areas:
+  /* grid-template-areas:
     'header header header'
     'menu-nav main calendar'
-    'footer footer footer';
+    'footer footer footer'; */
 }
 
 @media (max-width: 1024px) {
   #app {
-    grid-template-areas:
+    /* grid-template-areas:
       'header header'
       'menu-nav menu-nav'
       'main calendar'
       'footer footer';
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 4fr 1fr; */
   }
 }
 @media (max-width: 768px) {
   #app {
-    grid-template-areas:
+    /* grid-template-areas:
       'header'
       'menu-nav'
       'main'
       'calendar'
       'footer';
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr); */
 
   }
 }
