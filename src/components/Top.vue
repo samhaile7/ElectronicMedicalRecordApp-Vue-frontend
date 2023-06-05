@@ -202,7 +202,7 @@ export default {}
 
 .toggle-button{
   position:absolute;
-  top: .75rem;
+  top: 1rem;
   right: 1rem;
   display: none;
   flex-direction: column;
@@ -230,8 +230,23 @@ export default {}
   .toggle-button {
     display: flex;
   }
-  .topbar-links{
-    display: none;
+  .topbar-links {
+    /* display: none; */
+  }
+
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .topbar-links  {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .topbar-links li {
+   text-align: center;
+   padding: 0.5rem 1rem;
   }
 }
 </style>
