@@ -140,12 +140,12 @@
         </g>
       </svg>
     </router-link>
-    <a href="#" class="toggle-button">
+    <a href="#" class="toggle-button" @click="toggle()">
       <span class="bar"></span>
       <span class="bar"></span>
       <span class="bar"></span>
     </a>
-    <ul class="topbar-links">
+    <ul class="topbar-links" v-bind:class="{hide:showMenu}">
       <li>
         <router-link to="/dashboard"> Home </router-link>
       </li>
@@ -163,10 +163,24 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+     
+      showMenu: true
+    }
+},
+methods: {
+  toggle() {
+    this.showMenu = !this.showMenu;
+  }
+}
+}
 </script>
 
 <style>
+
+
 .topbar {
   background-color: rgba(213, 238, 246, 0.5);
   border: 3px solid rgb(254, 0, 0);
@@ -224,6 +238,10 @@ export default {}
   max-width: 200px;
   height: 100%;
   margin: 0.5rem;
+}
+
+.hide {
+  display: none;
 }
 
 @media( max-width: 768px){
